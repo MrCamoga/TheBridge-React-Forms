@@ -44,19 +44,19 @@ const Reserve = () => {
             <form onSubmit={handleSubmit} className='form'>
                 <div>
                     <label htmlFor='name'>Name: </label>
-                    <input type='text' id='name' name='name' placeholder='Name' onChange={handleInputChange}/>
+                    <input type='text' id='name' name='name' placeholder='Name' onChange={handleInputChange} required/>
                 </div>
                 <div>
                     <label htmlFor='telephone'>Phone number: </label>
-                    <input type='tel' id='telephone' name='telephone' placeholder='+34XXXXXXXXX' onChange={handleInputChange}/>
+                    <input type='tel' id='telephone' name='telephone' placeholder='+34XXXXXXXXX' onChange={handleInputChange} required/>
                 </div>
                 <div>
                     <label htmlFor='date'>Date: </label>
-                    <input type='date' id='date' name='date' min={new Date().toISOString().split('T')[0]} placeholder='' onChange={handleInputChange}/>
+                    <input type='date' id='date' name='date' min={new Date().toISOString().split('T')[0]} placeholder='' onChange={handleInputChange} required/>
                 </div>
                 <div>
                     <label htmlFor='guests'>Number of guests: </label>
-                    <input type='number' id='guests' name='guests' min='0' placeholder='' value='1' onChange={handleInputChange}/>
+                    <input type='number' id='guests' name='guests' min='0' placeholder='' value='1' onChange={handleInputChange} required/>
                 </div>
                 <span className={messageType}>{message}</span>
                 <input type='submit' value='Send'/>

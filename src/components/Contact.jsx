@@ -45,15 +45,15 @@ const Contact = () => {
             <form onSubmit={handleSubmit} className='form'>
                 <div>
                     <label htmlFor='name'>Name: </label>
-                    <input type='text' id='name' name='name' placeholder='Name' onChange={handleInputChange}/>
+                    <input type='text' id='name' name='name' placeholder='Name' onChange={handleInputChange} required/>
                 </div>
                 <div>
                     <label htmlFor='email'>Email: </label>
-                    <input type='text' id='email' name='email' placeholder='Email' onChange={handleInputChange}/>
+                    <input type='text' id='email' name='email' placeholder='Email' onChange={handleInputChange} required/>
                 </div>
                 <div>
                     <label htmlFor='message'>Message: </label>
-                    <textarea type='text' id='message' name='message' placeholder='' onChange={handleInputChange}></textarea>
+                    <textarea type='text' id='message' name='message' placeholder='' onChange={handleInputChange} required></textarea>
                 </div>
                 <span className={messageType}>{message}</span>
                 <input type='submit' value='Send'/>
