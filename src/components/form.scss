@@ -1,0 +1,17 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    input[type=submit] {
+        align-self: flex-start;
+    }
+
+    .error { color: #d00; }
+    .success { color: #0d0; }
+}

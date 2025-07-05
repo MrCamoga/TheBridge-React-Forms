@@ -1,0 +1,19 @@
+.navbar {
+    ul {
+        display: flex;
+        background-color: #444;
+        margin: 0px;
+        list-style: none;
+
+        a {
+            padding: 10px 30px;
+            text-decoration: none;
+            color: #fff;
+            display: inline-block;
+
+            &:hover, &.active {
+                background-color: #666;
+            }
+        }
+    }
+}
