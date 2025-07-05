@@ -54,6 +54,10 @@ const Reserve = () => {
                     <label htmlFor='date'>Date: </label>
                     <input type='date' id='date' name='date' min={new Date().toISOString().split('T')[0]} placeholder='' onChange={handleInputChange}/>
                 </div>
+                <div>
+                    <label htmlFor='guests'>Number of guests: </label>
+                    <input type='number' id='guests' name='guests' min='0' placeholder='' value='1' onChange={handleInputChange}/>
+                </div>
                 <span className={messageType}>{message}</span>
                 <input type='submit' value='Send'/>
             </form>
